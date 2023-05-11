@@ -16,6 +16,7 @@ import javazoom.jlgui.basicplayer.BasicPlayerException;
 import javazoom.jlgui.basicplayer.BasicPlayerListener;
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
@@ -461,7 +462,7 @@ public class Inicio extends javax.swing.JFrame implements BasicPlayerListener{
         jArchivoMenu.add(jSeparator2);
 
         jAbrirVideoMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jAbrirVideoMenuItem.setText("Abrir Video");
+        jAbrirVideoMenuItem.setText("Video Player");
         jAbrirVideoMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jAbrirVideoMenuItemActionPerformed(evt);
@@ -1327,6 +1328,7 @@ public class Inicio extends javax.swing.JFrame implements BasicPlayerListener{
                 myReproductorVideo.start(new Stage());
             }
         });
+
     }                                                   
 
     // Variables declaration - do not modify                     
